@@ -13,7 +13,7 @@ allprojects {
   
   ```
   
-  *Step 2. Add the dependency
+  * Step 2. Add the dependency
   
   
   ```
@@ -23,7 +23,7 @@ allprojects {
   
   ```
   
-  *Step 3. Create an color array
+  * Step 3. Create an color array in  " res/values/array.xml "
   
   ```
     <array name="textview_colors">
@@ -34,7 +34,8 @@ allprojects {
 
   ```
   
-  *Step 4. add a GradientTextView to your layout file 
+  * Step 4. add a GradientTextView to your layout file 
+  
   
   ```
   
@@ -48,6 +49,17 @@ allprojects {
         tools:ignore="MissingConstraints" />
   
   ```
+  
+  *   use right,left,up,bottom to set the gradient direction.
+  ```
+  app:gradient_direction="right"
+  
+  ```
+ * user app:color_list="@array/colors_array" to set the gradient color list
+ 
+ ```
+ app:color_list="@array/textview_colors"
+ ```
   
   That's it!
   
