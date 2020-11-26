@@ -18,6 +18,7 @@ public class GradientTextView extends androidx.appcompat.widget.AppCompatTextVie
 
     private int mAngle = 0;
 
+
     private DIRECTION mDIRECTION;
 
     public enum DIRECTION {

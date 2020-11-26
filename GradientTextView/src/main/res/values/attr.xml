@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientTextView">
+        <attr name="color_list" format="reference"/>
+        <attr name="gradient_direction" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="up" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="gradient_angle" format="integer"/>
+    </declare-styleable>
+</resources>
