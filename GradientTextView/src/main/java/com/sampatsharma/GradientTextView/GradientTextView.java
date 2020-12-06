@@ -53,6 +53,7 @@ public class GradientTextView extends androidx.appcompat.widget.AppCompatTextVie
         super.onSizeChanged(w, h, oldw, oldh);
 
         if (mColors != null) {
+            this.setTextColor(mColors[0]);
             int[] xyPositions = calculateGradientPositions(w, h);
             Shader shader= new LinearGradient(xyPositions[0], xyPositions[1], xyPositions[2], xyPositions[3], mColors, null, Shader.TileMode.CLAMP);
             getPaint().setShader(shader);
